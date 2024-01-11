@@ -3,42 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <title>Ilya`s CV</title>
+    <link rel="stylesheet" href="style.css">
   <body>
-    <table><tr><td>
-    <img src="photo_2024-01-09_16-41-49.jpg" width="200" alt="Тут моя фотка"></td>
-    <td>
+    <div class="container">
+    <div class="info">
+    <img class="avatar" src="photo_2024-01-09_16-41-49.jpg"  alt="Тут моя фотка">
+    <div class="info-text">
     <h1>Кыолехт Илья</h1>
-    <p><em>Я ученик слитой программы <strong>Владилена Минина</strong></em></p>
-    <p>Занимаюсь эндуро, сноубордингом и хочу рабоать в программировании.</p></td></tr>
-  </table>
-    <hr>
-    <h2>Мои социальные сети</h2>
-    <ul>
-      <li><a target="_blank" href="https://vk.com/id13874390">Вконтакте</a></li>
-      <li><a target="_blank" href="https://t.me/pokoril">Телеграмм</a></li>
-    </ul>
-    <hr>
+    <p>Я ученик слитой программы <strong>Владилена Минина</strong></p>
+    <p>Занимаюсь эндуро, сноубордингом и хочу рабоать в it-компании на должности фронтенд разработчика.</p></td>
+    
+    <h4>Мои социальные сети</h4>
+
+      <a target="_blank" href="https://vk.com/id13874390">Вконтакте</a>
+      <a target="_blank" href="https://t.me/pokoril">Телеграмм</a>
+    </div>
+  </div>
+
+    
+
+    
+    
+  
+    
+<div class="card bg-yellow">
     <h2>Мои хобби</h2>
-    <ol>
+    <ol class="list">
       <li>Enduro</li>
       <li>Snowboarding</li>
       <li>Crossfit</li>
       
     </ol>
-    <hr>
+  </div>
+
+  <div class="card bg-green">
     <h2>Опыт работы</h2>
-    <table>
-      <tr>
-        <th>Место</th>
-        <th>Должность</th>
-        <th>Год</th>
-      </tr>
-      <tr>
+    <table class="table">
+          <tr>
         <td>МВД</td>
         <td>Инженер</td>
         <td>2018-2020</td>
       </tr>
-      
       <tr>
         <td>МВД</td>
         <td>Начальник отдела</td>
@@ -50,20 +55,43 @@
         <td>2023-н.в.</td>
       </tr>
     </table>
-  <hr>
+  </div>
+  <div class="card bg-red">
+    <h2>Любимые ролики на YouTube</h2>
+    <ul class="link-list">
+      <li> <a href="https://youtu.be/kz23xxukY5s?si=vudKrZgGIWxe1_ur">React JS c Нуля - Курс для начинающих БЕЗ ВОДЫ [2024]</a></li>
+      <li> <a href="https://youtu.be/kz23xxukY5s?si=vudKrZgGIWxe1_ur">React JS c Нуля - Курс для начинающих БЕЗ ВОДЫ [2024]</a></li>
+    </ul>
+  </div>
+
+  
+<div class="contact">
     <h2>Связаться со мной</h2>
     <form action="">
+      <div class="row">
+      <div class="form-group">
       <label for="name">Ваше имя:</label>
-      <input type="text" id="name" placeholder="vvedite name">
-      <br>
+      <input type="text" id="name" placeholder="Введите ваше имя...">
+      </div>
+    
+      
+      <div class="form-group">
       <label for="email">Ваша почта:</label>
-      <input type="text" id="email" placeholder="vvedite email">
-      <br>
+      <input type="text" id="email" placeholder="Введите email">
+    </div>
+  </div>
+    <div class="form-group">
       <label for="text">Ваше сообщение:</label>
-      <br>
       <textarea name="" id="text" cols="15" rows="2"></textarea>
-      <br>
-      <input type="submit" value="Связаться">
+    </div>
+      
+
+      <input class="btn" type="submit" value="Связаться">
     </form>
+  </div>
+  <div class="position">
+    <div class="box"></div>
+  </div>
+  </div>
   </body>
 </html>
